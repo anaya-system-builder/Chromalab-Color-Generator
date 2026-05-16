@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Chromalab Color Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+<h1>Chromalab Color Generator</h1>
+
+<div id="preview">
+<h2 id="hex">#000000</h2>
+<div class="value">
+<p id="rgb">rgb(0,0,0)</p>
+<p id="hsl">hsl(0%,0%,0%)</p>
+</div>
+</div>
+
+<div class="buttons">
+<button class="btn" id="generate">GENERATE</button>
+<button class="btn" id="copy">COPY</button>
+<button class="btn" id="auto">AUTO-ON</button>
+<button class="btn" id="reset">RESET</button>
+</div>
+
+<div id="slider">
+<div class="row">
+<span class="label">R</span>
+<input type="range" id="r" min="0" max="255" value="0">
+<span class="value" id="rval">0</span>
+</div>
+<div class="row">
+<span class="label">G</span>
+<input type="range" id="g" min="0" max="255" value="0">
+<span class="value" id="gval">0</span>
+</div>
+<div class="row">
+<span class="label">B</span>
+<input type="range" id="b" min="0" max="255" value="0">
+<span class="value" id="bval">0</span>
+</div>
+</div>
+
+<h5>HISTORY</h5>
+<div id="history"></div>
+</div>
+
+<div id="toast">Copied!</div>
+
+<script src="script.js"></script>
+</body>
+</html>
